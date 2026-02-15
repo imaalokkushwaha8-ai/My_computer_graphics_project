@@ -126,6 +126,9 @@ while running:
             running = False
 
         # PRESS THE SUITABLE KEY FOR THE SHAPE YOU WANT
+        # press 1 for triangle
+        # press 2 for square
+        # press 3 for pentagon
 
         if event.type == pygame.KEYDOWN:
 
@@ -139,6 +142,8 @@ while running:
                 shape_type = "pentagon"
 
             # TRANSLATION
+
+            # press right,left,up and down key for translation
 
             elif event.key == pygame.K_RIGHT:
                 tx += 10
@@ -154,6 +159,9 @@ while running:
 
             # SCALING
 
+            # press l to scale object large
+            # press s to scale object small
+
             elif event.key == pygame.K_l:
                 sx += 0.1
                 sy += 0.1
@@ -163,6 +171,9 @@ while running:
                 sy -= 0.1
 
             # ROTATION
+
+            # press r to rotate anticlockwise
+            # press a to rotate clockwise
 
             elif event.key == pygame.K_r:
                 angle_deg +=10
